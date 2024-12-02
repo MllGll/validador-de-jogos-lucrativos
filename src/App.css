@@ -1,0 +1,68 @@
+.expand-enter {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+}
+
+.expand-enter-active {
+	max-height: 450px;
+	opacity: 1;
+}
+
+.expand-exit {
+	max-height: 450px;
+	opacity: 1;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+}
+
+.expand-exit-active {
+	max-height: 0;
+	opacity: 0;
+}
+
+.title {
+	background: linear-gradient(
+		to bottom,
+		hsl(var(--nextui-default-900)),
+		hsl(var(--nextui-default-800)),
+		hsl(var(--nextui-default-300))
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.info-card {
+	background: transparent;
+}
+
+.form-card {
+	background: transparent;
+	border-color: hsl(var(--nextui-default-100));
+	border-width: 2px;
+}
+
+.info {
+	z-index: 1000;
+	position: fixed;
+	background-color: hsl(var(--nextui-overlay) / 0.3);
+	backdrop-filter: blur(12px);
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.feedback {
+	animation: blink 0.5s infinite;
+}
