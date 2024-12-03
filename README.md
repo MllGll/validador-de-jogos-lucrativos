@@ -63,7 +63,7 @@ npm install
 
 Inicie o servidor
 ```
-npm run start
+npm run dev
 ```
 
 Assim que o projeto for executado, abra a porta referenciada no terminal no navegador de sua preferência.
