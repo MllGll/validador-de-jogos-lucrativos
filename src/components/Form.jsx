@@ -75,16 +75,16 @@ function Form({
 	};
 
 	return (
-		<Card className="form-card p-6 mt-16 mb-24 w-[1100px] h-[375px] justify-between">
+		<Card className="form-card p-6 mt-16 mb-24 w-[1100px] max-xl:w-[80vw] max-sm:w-[95vw] h-[375px] justify-between">
 			{result !== null ? (
 				<Result name={name} result={result} feedback={feedback} />
 			) : (
 				<Fragment>
 					<div className="flex flex-col gap-2">
-						<span className="text-3xl font-bold">
+						<span className="text-3xl max-sm:text-xl font-bold">
 							{visibleSteps[activeStep].question}
 						</span>
-						<span className="text-lg text-default-500">
+						<span className="text-lg max-xl:text-base max-sm:text-sm text-default-500">
 							{`Exemplo: ${visibleSteps[activeStep].example}`}
 						</span>
 					</div>

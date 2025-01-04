@@ -38,15 +38,15 @@ function Home() {
 
 	return (
 		<>
-			<section className="flex-grow flex flex-col items-center justify-center">
-				<span className="title text-6xl font-bold leading-normal">
+			<section className="flex-grow flex flex-col items-center justify-center text-center">
+				<span className="title text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-2xl max-sm:text-lg font-bold leading-normal">
 					Validador de Ideias de Jogos Lucrativos
 				</span>
-				<span className="text-2xl text-default-500 mb-8 font-light">
+				<span className="text-2xl max-xl:text-lg max-md:text-base max-md:px-4 text-default-500 mb-8 font-light">
 					Responda ao formulário e descubra o quanto sua ideia pode ter
 					potencial de lucro.
 				</span>
-				<div className="flex gap-2">
+				<div className="flex max-sm:flex-col max-sm:w-[100%] max-sm:px-4 gap-2">
 					<Button
 						onPress={!name ? onOpen : handleReset}
 						color="primary"
